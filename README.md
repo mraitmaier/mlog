@@ -1,2 +1,2 @@
 # mlog
-Taloring the Go standard lib log package to my needs
+Tayloring the Go standard lib log package to my needs.
