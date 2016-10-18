@@ -1,4 +1,4 @@
-package log
+package mlog
 /*
 This file represents implementation of logging to remote syslog server.
 The task was started, but was dropped until sometime in the future. The reason is simple: there's no support for syslog in
