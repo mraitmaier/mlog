@@ -1,12 +1,11 @@
 // Log is the custom package that is used instead of go's standard 'log' package.
 // It provides another layer of abstraction for logging to ease the pain of logging to more destinations simultaneouly.
-package log
+package mlog
 
 import (
 	"fmt"
 	"log"
 	"strings"
-	//    "log/syslog"
 )
 
 // Log is a collection (a slice) of Loggers.
