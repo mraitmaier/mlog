@@ -41,7 +41,7 @@ func (l *Log) logmsgf(frmt string, prio Priority, v ...interface{}) {
 		// send message to channel only when severity is smaller or equal to defined...
 		if prio <= lg.Priority {
 			//lg.Printf(frmt, v...)
-			lg.Msgch <- fmt.Sprintf(frmt, v...)
+			lg.Msgch <- fmt.Sprintf(lg.Format, strings.ToUpper(prio.String()), fmt.Sprintf(frmt, v...))
 		}
 	}
 }
